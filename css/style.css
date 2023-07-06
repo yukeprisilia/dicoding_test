@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Work Sans";
+  width: 100vw;
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10%;
+  align-items: center;
+  z-index: 9999;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-container .logo img {
+  width: 150px;
+}
+
+.navbar-container .nav-list {
+  display: flex;
+}
+.navbar-container .nav-list a {
+  margin: 0 1rem;
+  color: white;
+  font-weight: 400;
+}
+
+.navbar-container .nav-list a:hover {
+  color: #df8838;
+}
+
+.navbar-container .nav-list a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #df8838;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar-container .nav-list a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar-container .nav-kanan {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container .nav-kanan a {
+  margin: 0 0.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-container .nav-kanan a.active {
+  background-color: white;
+  color: #090808;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+#menu {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/banner.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .content {
+  margin: auto;
+  text-align: center;
+  z-index: 999999;
+}
+
+.hero .content h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 5rem;
+  margin: 1rem;
+  color: white;
+}
+
+.hero .content p {
+  font-size: 1.1rem;
+  color: #b0b6bc;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.hero .content button.active {
+  background: none;
+  color: white;
+  font-weight: 500;
+  border: 1px solid white;
+}
+
+.hero .content button.active .size-18 {
+  margin-right: 0.5rem;
+  vertical-align: top;
+}
+
+.hero .content button {
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin: 1.5rem 0.5rem 0;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #090808, transparent);
+}
+
+.daftar-keunggulan {
+  display: flex;
+  width: 100%;
+  background-color: #090808;
+  padding: 0 10% 3rem;
+  justify-content: space-between;
+}
+
+.keunggulan {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.keunggulan h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.keunggulan p {
+  color: white;
+
+  font-size: 0.9rem;
+  color: #b0b6bc;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
+.daftar-keunggulan .line {
+  border-left: 1px solid #7d7f81;
+  transform: scale(0.7);
+}
+
+.destinasi {
+  margin: 10%;
+}
+
+.destinasi .judul {
+  text-align: center;
+}
+
+.destinasi .judul h5 {
+  color: #df8838;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.destinasi .judul h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.destinasi .tab-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem auto 2rem;
+}
+
+.destinasi .tab-menu button.active {
+  background-color: #df8838;
+  color: white;
+}
+
+.destinasi .tab-menu button {
+  margin: 0 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #f6f5f8;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+}
+.destinasi .list-image {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.destinasi .list-image .image {
+  width: 23%;
+  height: 42vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.8rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Mengatur tata letak elemen secara vertikal */
+  justify-content: space-between; /* Mengatur ruang di antara elemen di atas dan bawah */
+}
+
+.destinasi .list-image .image.satu {
+  background-image: url("../img/img-1.jpg");
+}
+
+.destinasi .list-image .image.dua {
+  background-image: url("../img/img-2.jpg");
+}
+
+.destinasi .list-image .image.tiga {
+  background-image: url("../img/img-3.jpg");
+}
+
+.destinasi .list-image .image.empat {
+  background-image: url("../img/img-4.jpg");
+}
+
+.destinasi .list-image .image .ratings {
+  height: 8rem;
+  padding: 1rem 0 0 1rem;
+  background-image: linear-gradient(to bottom, #525252, transparent);
+}
+
+.destinasi .list-image .image .ratings span {
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.size-18 {
+  width: 18px;
+  height: 18px;
+  vertical-align: top;
+  margin-right: 0.3rem;
+}
+
+.destinasi .list-image .image .detail {
+  display: flex;
+  padding: 0 1rem 1rem 1rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+  height: 8rem;
+  background-image: linear-gradient(to top, #525252, transparent);
+}
+
+.destinasi .list-image .image .detail .nama-destinasi h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.destinasi .list-image .image .detail .nama-destinasi span {
+  font-size: 0.8rem;
+}
+
+.destinasi .list-image .image .detail .harga {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.testimoni {
+  margin: 10%;
+}
+
+.testimoni .judul h5 {
+  color: #df8838;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.testimoni .judul h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.bi-quote {
+  font-size: 2rem;
+  color: #df8838;
+}
+.testimoni .testimonial {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimoni .testimonial .list-testimoni {
+  margin: 1rem;
+}
+
+.testimoni .list-testimoni .user {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.testimoni .list-testimoni .user img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.testimoni .list-testimoni .user .detail-user h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.testimoni .list-testimoni .user .detail-user span {
+  font-size: 0.9rem;
+  color: #7d7f81;
+}
+
+.support {
+  margin: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.support .contact-us {
+  width: 30%;
+}
+
+.support .list-faq {
+  width: 65%;
+}
+
+.support .contact-us h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.support .contact-us form {
+  margin-top: 1rem;
+}
+
+.support .contact-us form input {
+  width: 15rem;
+  padding: 0.5rem 1rem;
+  background-color: #f6f5f8;
+  border-radius: 3rem;
+}
+
+.support .contact-us form button {
+  padding: 0.5rem 1rem;
+  background-color: #df8838;
+  border-radius: 3rem;
+  color: white;
+}
+
+.support .list-faq .faq {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 1rem;
+}
+
+.support .list-faq h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.support .faq .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.support .faq .question h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.support .faq .answer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.support .list-faq .faq .answer {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.support .list-faq .faq.active .answer {
+  max-height: 300px;
+}
+
+.support .list-faq .faq.active .question .size-18 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.footer-container {
+  background-color: #f0f0f0;
+  padding: 5% 10%;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-container .footer-content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.footer-container .footer-img img {
+  width: 100px;
+  margin-bottom: 0.5rem;
+  margin-right: 3rem;
+}
+
+.footer-container .footer-menu {
+  display: flex;
+}
+
+.footer-container .footer-menu .footer {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer-container .footer-menu .footer h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-container .footer-menu .footer a {
+  display: block;
+  color: #7d7f81;
+  margin: 0.5rem 0;
+}
+
+.footer-container .footer-bottom {
+  text-align: center;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
