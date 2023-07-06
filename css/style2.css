@@ -168,7 +168,7 @@
   }
 
   .testimoni .testimonial .list-testimoni {
-    width: 45%;
+    width: 100%;
   }
 
   .destinasi .list-image {
@@ -178,8 +178,8 @@
   }
 
   .destinasi .list-image .image {
-    width: 45%;
     margin-bottom: 2rem;
+    height: 100%;
   }
 
   .footer-container .footer-menu {
