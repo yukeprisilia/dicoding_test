@@ -129,7 +129,7 @@
   } */
 }
 
-/* laptop */
+/* mobile */
 @media screen and (max-width: 576px) {
   html {
     font-size: 55%;
