@@ -218,7 +218,7 @@ body {
 
 .destinasi .list-image .image {
   width: 23%;
-  height: 42vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -246,7 +246,7 @@ body {
 }
 
 .destinasi .list-image .image .ratings {
-  height: 8rem;
+  height: 10rem;
   padding: 1rem 0 0 1rem;
   background-image: linear-gradient(to bottom, #525252, transparent);
 }
@@ -272,7 +272,7 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   color: white;
-  height: 8rem;
+  height: 10rem;
   background-image: linear-gradient(to top, #525252, transparent);
 }
 
